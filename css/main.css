@@ -1,0 +1,155 @@
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.wardrobe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 400px;
+    height: 500px;
+    border: 1px solid;
+    padding: 10px;
+    gap: 10px;
+    background-color: rgb(120, 71, 7);
+    position: relative;
+
+}
+
+.wd-cont {
+    width: 100%;
+    display: flex;
+    border: 1px solid;
+    background-color: rgb(247, 240, 240);
+}
+
+.books-cont {
+    height: 20%;
+    /* flex-direction: row; */
+    align-items: flex-end;
+    /* vertical (Y) axis on flex row */
+    justify-content: flex-end;
+    /* horizontal (X) axis on flex row */
+}
+
+.clothes-cont {
+    height: 50%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border-bottom: 0;
+    /* background-color: rgb(139, 88, 20); */
+    position: relative;
+}
+
+.toys-cont {
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 20px;
+    /* z-index: 1; */
+    position: relative;
+}
+
+.drawers-cont {
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    /* flex-direction: row; no need to mention when row!!! */
+    height: 20%;
+    gap: 10px;
+    padding-top: 10px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    background-color: rgb(111, 69, 13);
+
+}
+
+.drawer {
+    width: 50%;
+    border: 1px solid;
+    display: flex;
+    height: 100%;
+    gap: 4px;
+    align-items: flex-end;
+    background-color: rgb(247, 240, 240);
+}
+
+.locker-cont {
+    width: 35%;
+    border: 10px solid;
+    display: flex;
+    gap: 4px;
+    align-items: flex-end;
+    height: 45%;
+
+}
+
+.drawer-right {
+    justify-content: flex-end;
+    border-right: 0;
+    /* background-color: rgb(247, 240, 240); */
+}
+
+.drawer-left {
+    border-left: 0;
+    /* background-color: rgb(247, 240, 240); */
+}
+
+.stacked-clothes {
+    position: absolute;
+    left: 10%;
+    bottom: 60px;
+}
+
+.doors-cont {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* background-color: rgb(214, 200, 185); */
+    z-index: 1;
+    display: flex;
+    /* gap: 10px; */
+    /* padding: 12px; */
+
+
+}
+.door{
+    width: 50%;
+    border: 1px solid;
+    padding: 10px;
+    background-color: rgb(155, 112, 60);
+    transition: all 0.3s ease-in;
+}
+.mirror {
+    background-color: rgb(123, 183, 236);
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    
+}
+.door-right {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+.door-right:hover {
+    transform: translateX(100%);
+  }
+  .door-left:hover {
+    transform: translateX(-100%);
+  }
